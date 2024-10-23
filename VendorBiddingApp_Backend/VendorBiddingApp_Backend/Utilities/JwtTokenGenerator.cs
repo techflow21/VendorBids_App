@@ -21,7 +21,7 @@ namespace VendorBiddingApp_Backend.Utilities
             {
                 new Claim(JwtRegisteredClaimNames.Jti, vendor.Id.ToString()),
                 new Claim("VendorId", vendor.Id.ToString()),
-                new Claim(ClaimTypes.Email, vendor.Email)
+                new Claim("VendorName", vendor.Name)
             };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]!));
