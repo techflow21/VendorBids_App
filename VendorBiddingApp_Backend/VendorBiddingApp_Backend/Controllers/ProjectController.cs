@@ -7,7 +7,7 @@ using VendorBiddingApp_Backend.Models;
 
 namespace VendorBiddingApp_Backend.Controllers
 {
-    [Route("api/project")]
+    [Route("api/projects")]
     [ApiController]
     public class ProjectController : ControllerBase
     {
